@@ -1,0 +1,92 @@
+---
+// Courses section
+---
+
+<section id="courses" class="section courses-section">
+	<div class="section-content">
+		<h2>Kurzy</h2>
+		<div class="courses-grid">
+			<div class="course-card">
+				<h3>Začiatočníci</h3>
+				<p>Pre tých, ktorí len začínajú svoju jazykovú cestu. Základná komunikácia, gramatika a výslovnosť.</p>
+				<span class="level">A1 - A2</span>
+			</div>
+			<div class="course-card">
+				<h3>Pokročilí</h3>
+				<p>Zlepšite svoju plynulosť a sebadôveru. Konverzácia na tému, obchodná angličtina, príprava na skúšky.</p>
+				<span class="level">B1 - B2</span>
+			</div>
+			<div class="course-card">
+				<h3>Expert</h3>
+				<p>Dosiahnite vysokú úroveň ovládania jazyka. Špecializované kurzy, príprava na CAE, IELTS a iné.</p>
+				<span class="level">C1 - C2</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.section {
+		padding: 6rem 1.5rem;
+		max-width: 1200px;
+		margin: 0 auto;
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.section-content {
+		width: 100%;
+	}
+
+	.section h2 {
+		font-size: clamp(2rem, 5vw, 3.5rem);
+		margin: 0 0 2rem;
+		color: #e6eef8;
+	}
+
+	.section p {
+		font-size: 1.05rem;
+		line-height: 1.6;
+		color: rgba(230, 238, 248, 0.85);
+		margin-bottom: 1.5rem;
+	}
+
+	.courses-section {
+		background: linear-gradient(135deg, #071124 0%, #0f1724 100%);
+	}
+
+	.courses-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.course-card {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+		border-radius: 14px;
+		padding: 2rem;
+		border: 1px solid rgba(255, 255, 255, 0.03);
+		backdrop-filter: blur(6px);
+	}
+
+	.course-card h3 {
+		font-size: 1.4rem;
+		margin: 0 0 0.75rem;
+		color: #06b6d4;
+	}
+
+	.course-card p {
+		margin-bottom: 1.5rem;
+	}
+
+	.course-card .level {
+		display: inline-block;
+		background: #7c3aed;
+		color: #021018;
+		padding: 0.35rem 0.75rem;
+		border-radius: 999px;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+</style>
